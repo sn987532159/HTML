@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slick</title>
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <style>
+        .container{
+            border: 1px solid red;
+            width: 50%;
+            margin: auto;
+
+        }
+
+        .slick-slide{
+            height: 500px;
+        }
+
+        .slick-slide img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slick-prev:before, .slick-next:before{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="your-class">
+            <div>
+                <img src="./imgs/mountains.jpg" alt="">
+            </div>
+            <div><img src="https://assets.hermes.com/is/image/hermesproduct/atout-26%E6%94%B6%E7%B4%8D%E5%8C%85--079062CKAM-front-1-300-0-1600-1600-q99_b.jpg" alt=""></div>
+            <div><img src="https://assets.hermes.com/is/image/hermesedito/P_169_GRIDS_LEATHER_CALVIDUO?name=P_169_GRIDS_LEATHER_CALVIDUO&end?fit=wrap,0&wid=923" alt=""></div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.your-class').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true});        
+    </script>
+
+</body>
+</html>

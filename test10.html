@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img-wrap</title>
+    <style>
+        div{
+            width: 50%;
+            height: 200px;
+            margin-bottom: 10px;
+            border: 1px solid red;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .cover img{
+            object-fit: cover;
+        }
+
+        .contain img{
+            object-fit: contain;
+        }
+
+        .fill img{
+            object-fit: fill;
+        }
+
+        .none img{
+            object-fit: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <img src="./imgs/mountains.jpg" alt="">
+    </div>
+
+    <div class="contain">
+        <img src="./imgs/mountains.jpg" alt="">
+    </div>
+
+    <div class="fill">
+        <img src="./imgs/mountains.jpg" alt="">
+    </div>
+
+    <div class="none">
+        <img src="./imgs/mountains.jpg" alt="">
+    </div>
+</body>
+</html>
